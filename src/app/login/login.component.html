@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="main">
+        <div class="form">
+            <label for="username">Username</label>
+            <input name="username" class="form-control" type="text" [(ngModel)]="username">
+            <p id="err1">{{err1}}</p>
+        </div>
+        <div class="form">
+            <label for="password">Password</label>
+            <input name="password" class="form-control" type="text" [(ngModel)]="password">
+            <p id="err2">{{err2}}</p>
+        </div>
+        <div class="button">
+            <input class="btn" type="button" value="Login" (click)="login()">
+        </div>
+        <p id="err3">{{err3}}</p>
+    </div>
+</div>

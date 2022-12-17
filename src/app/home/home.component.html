@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+
+<div class="info">
+    <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Fugit necessitatibus au
+        tem possimus praesentium inventore iste?
+         Maiores, ipsam. Rerum necessitatibus voluptas unde 
+         architecto repudiandae ad ea est, nesciunt, error, 
+         labore perferendis esse perspiciatis iste aliquam animi earum fugit tenetur
+          et dolores quia reprehenderit facilis! Facere officia nemo error minus qui.</p>
+</div>
+
+
+<select class="select" [(ngModel)]="selectedoption">
+    <option *ngFor="let action of action" [value]="action.id">{{action.name}} </option>
+</select>
+
+<div>
+    <div *ngIf="selectedoption==1">
+        <input class="search" placeholder="Search..." type="search" [(ngModel)]="searchtext">
+        <table>
+            <thead>
+                <tr>
+                    <TH>ID</TH>
+                    <TH>USN</TH>
+                    <th>NAME</th>
+                </tr>
+            </thead>
+            <tbody>
+                <TR *ngFor="let e of data | serach: searchtext ">
+                    <td>{{e.id}}</td>
+                    <td>{{e.usn}}</td>
+                    <td>{{e.name}}</td>
+                </TR>
+            </tbody>
+        </table>
+    </div>
+</div>

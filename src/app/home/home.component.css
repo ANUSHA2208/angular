@@ -1,0 +1,41 @@
+.info
+{
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px 0 0 200px;
+}
+
+.select
+{
+    margin-left: 220px;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0.2px solid grey;
+}
+table
+{
+    width: 80%;
+    margin: auto;
+}
+
+th,td
+{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.search
+{
+    margin:100px 0 25px 200px;
+    width: 30%;
+    height: 25px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(167, 167, 167);
+}
+
